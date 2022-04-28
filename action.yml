@@ -22,13 +22,6 @@ inputs:
 runs:
   using: "docker"
   image: "Dockerfile"
-  args:
-    - ${{ inputs.name }}
-    - ${{ inputs.namespace }}
-    - ${{ inputs.timeout }}
-    - ${{ inputs.skipIfExists }}
-    - ${{ inputs.variables }}
-    - ${{ inputs.filename }}
 branding:
   color: "green"
   icon: "settings"
